@@ -162,7 +162,7 @@ med_entr ~ State * Eyes + (1|sub)
 ```
 Additional entropy reduction for cycling with eyes closed at right occipital (p = 0.045) and left parietal (p = 0.006).
 
-All models use `grouped_perm_glmm()` from the `ptestr` package with `seed = 42` and `nPerms = 10000` for reproducibility.
+All models use `grouped_perm_glmm()` from `ptestR` with `seed = 42` and `nPerms = 10000` for reproducibility.
 
 ### `Fig2.R`, `Fig3.R`, `Fig4.R`
 
@@ -214,8 +214,8 @@ install.packages(c(
   "png"
 ))
 
-# ptestr is not on CRAN — install from GitHub:
-remotes::install_github("quantide/ptestr")
+# ptestR is not on CRAN — install from GitHub:
+remotes::install_github("CoDe-Neuro/ptestR")
 ```
 
 Then render the full report:
@@ -258,7 +258,7 @@ Figures 1–3  +  statistical results
 | `ggbeeswarm` | Quasirandom jitter overlays on boxplots |
 | `ggpubr` | Statistical annotation on ggplot figures |
 | `rstatix` | Paired t-tests and effect sizes |
-| `ptestr` | Permutation-based GLMM testing (`grouped_perm_glmm`) |
+| [`ptestR`](https://github.com/CoDe-Neuro/ptestR) | Permutation-based GLMM testing (`grouped_perm_glmm`) |
 | `eegUtils` | EEG-specific utilities and topoplot support |
 | `akima` | 2D interpolation for topographic maps |
 | `mgcv` | GAM-based spatial smoothing |
@@ -291,6 +291,7 @@ Figures 1–3  +  statistical results
 ## 🤝 Related tools
 
 - 🔄 [**maxEntropy**](https://github.com/circadia-bio/maxEntropy) — Julia script that computed the S_Max entropy values in `data/`
+- 🧪 [**ptestR**](https://github.com/CoDe-Neuro/ptestR) — permutation-based GLMM testing package used for all statistical models
 - 🌙 [**SleepDiaries**](https://github.com/circadia-bio/SleepDiaries) — open-source React Native sleep diary app
 - ⚡ [**ACTT_validation_study**](https://github.com/circadia-bio/ACTT_validation_study) — ActTrust® validation pipeline in R/Quarto
 - 🔬 [**circadia-bio**](https://github.com/circadia-bio) — the Circadia Lab GitHub organisation
